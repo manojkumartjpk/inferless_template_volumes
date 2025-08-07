@@ -10,6 +10,7 @@ class InferlessPythonModel:
 
     def initialize(self):
         print("started load model", flush=True)
+        print("new print statement", flush=True)
         # Get custom cache path from environment
         folder_path = os.getenv("NFS_PATH")
         
