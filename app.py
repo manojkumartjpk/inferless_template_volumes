@@ -15,6 +15,7 @@ class InferlessPythonModel:
         
         # Set environment variable for Hugging Face cache
         os.environ["TRANSFORMERS_CACHE"] = folder_path
+        os.environ["HF_HOME"] = folder_path
 
         # (Optional) set Torch hub cache too, if needed
         os.environ["TORCH_HOME"] = folder_path
